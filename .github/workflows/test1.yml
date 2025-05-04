@@ -13,8 +13,8 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: Lint
-        run: eslint --ext .jsx --fix src
+        run: npx eslint --ext .jsx --fix src
       - name: Test
-        run: vitest run
+        run: npx vitest run
       - name: Build
-        run: vite build
+        run: npx vite build
