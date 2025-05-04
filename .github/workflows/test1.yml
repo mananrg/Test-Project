@@ -1,0 +1,12 @@
+name: test project
+on: push
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Lint
+        runs: eslint --ext .jsx --fix src
+      - name: Test
+        runs: vitest run
+      - name: Build
+        runs: vite build
