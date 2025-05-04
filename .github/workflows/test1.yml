@@ -5,8 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Lint
-        runs: eslint --ext .jsx --fix src
+        run: eslint --ext .jsx --fix src
       - name: Test
-        runs: vitest run
+        run: vitest run
       - name: Build
-        runs: vite build
+        run: vite build
